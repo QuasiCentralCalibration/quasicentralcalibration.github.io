@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calibration of Axial Fisheye Cameras Through Generic Virtual Central Models</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #0d0d0d;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: #111;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3em;
+    }
+    .authors, .conference {
+      color: #aaa;
+      font-size: 1rem;
+    }
+    .buttons {
+      margin: 1.5rem 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      background: #1e88e5;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background: #1565c0;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    pre {
+      background: #1a1a1a;
+      padding: 1rem;
+      overflow-x: auto;
+      color: #ccc;
+      font-size: 0.85rem;
+      border-left: 4px solid #1e88e5;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.8rem;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Calibration of Axial Fisheye Cameras Through Generic Virtual Central Models</h1>
+  <div class="authors">Pierre-André Brousseau, Sébastien Roy</div>
+  <div class="conference">ICCV 2019</div>
+  <div class="buttons">
+    <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Brousseau_Calibration_of_Axial_Fisheye_Cameras_Through_Generic_Virtual_Central_Models_ICCV_2019_paper.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>Paper</a>
+    <a href="https://gitlab.com/pabrousseau/quasicentralcalibration" target="_blank"><i class="fab fa-gitlab"></i>Code</a>
+  </div>
+</header>
+
+<section>
+  <h2>Abstract</h2>
+  <p style="text-align:justify;"> 
+Fisheye cameras are notoriously hard to calibrate using traditional plane-based methods. This paper proposes a new calibration method for large field of view cameras. Similarly to planar calibration, it relies on multiple images of a planar calibration grid with dense correspondences, typically obtained using structured light. By relying on the grids themselves instead of the distorted image plane, we can build a rectilinear Generic Virtual Central (GVC) camera. Instead of relying on a single GVC camera, our method proposes a selection of multiple GVC cameras which can cover any field of view and be trivially aligned to provide a very accurate generic central model. We demonstrate that this approach can directly model axial cameras, assuming the distortion center is located on the camera axis. Experimental validation is provided on both synthetic and real fisheye cameras featuring up to a 280deg field of view. To our knowledge, this is one of the only practical methods to calibrate axial cameras.
+  </p>
+</section>
+
+<section>
+</section>
+
+<section>
+  <h2>BibTeX</h2>
+  <pre>
+@inproceedings{brousseau2019calibration,
+  title={Calibration of axial fisheye cameras through generic virtual central models},
+  author={Brousseau, Pierre-Andre and Roy, Sebastien},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4040--4048},
+  year={2019}
+}
+  </pre>
+</section>
+
+<footer>
+  &copy; 2025 LabV3D. Built without frameworks.
+</footer>
+
+</body>
+</html>
